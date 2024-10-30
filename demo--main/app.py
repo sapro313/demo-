@@ -41,6 +41,6 @@ def hello_world():
 @app.route("/jobs")
 def json_func():
     return jsonify(JOBS)
-app.run(debug=True)
+app.run( host='0.0.0.0',debug=True)
 
    
